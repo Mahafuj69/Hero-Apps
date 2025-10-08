@@ -12,23 +12,23 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Apps'>Apps</Link></li>
-        <li><Link to='/Installation'> Installation</Link></li>
+        <li className=" hover:text-purple-700"><Link to='/'>Home</Link></li>
+        <li className=" hover:text-purple-700"><Link to='/Apps'>Apps</Link></li>
+        <li className=" hover:text-purple-700"><Link to='/Installation'> Installation</Link></li>
       </ul>
     </div>
         <img src={logo} alt="" className="h-8" />
-    <Link to className="btn btn-ghost text-xl">HERO.IO</Link>
+    <Link to='/' className="text-xl font-bold text-primary">HERO.IO</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-     <li><Link to='/' >Home</Link></li>
-        <li><Link to='/Apps' >Apps</Link></li>
-        <li><Link to='/Installation' > Installation</Link></li>
+    <ul className="menu menu-horizontal px-1 ">
+     <li className=" hover:text-purple-700"><Link to='/' >Home</Link></li>
+        <li className=" hover:text-purple-700"><Link to='/Apps' >Apps</Link></li>
+        <li className=" hover:text-purple-700"><Link to='/Installation' > Installation</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Contribute</a>
+    <a className="btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2]">Contribute</a>
   </div>
 </div>
     );

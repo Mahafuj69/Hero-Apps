@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://example.com/images/photoeditorpro.png",
+    "title": "Photo Editor Pro",
+    "companyName": "PixelPerfect Inc.",
+    "id": 1,
+    "description": "A full-featured photo editor with filters, effects, and advanced tools.",
+    "size": 95,
+    "reviews": 1250340,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 25010 },
+      { "name": "2 star", "count": 15300 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 250030 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/galaxywars.png",
+    "title": "Galaxy Wars: Oblivion",
+    "companyName": "Stellar Games",
+    "id": 2,
+    "description": "An epic space strategy game. Build your fleet and conquer the galaxy.",
+    "size": 250,
+    "reviews": 850678,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 40150 },
+      { "name": "2 star", "count": 20528 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 550000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/zenithweather.png",
+    "title": "Zenith Weather",
+    "companyName": "Atmos Labs",
+    "id": 3,
+    "description": "Hyper-local weather forecasts with a clean, intuitive interface.",
+    "size": 45,
+    "reviews": 210450,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 1350 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 32000 },
+      { "name": "5 star", "count": 170000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/mindfulmeditate.png",
+    "title": "Mindful Meditate",
+    "companyName": "SereneMind",
+    "id": 4,
+    "description": "Guided meditations and mindfulness exercises for stress relief and better sleep.",
+    "size": 110,
+    "reviews": 95300,
+    "ratingAvg": 4.9,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 85000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/quicktask.png",
+    "title": "QuickTask",
+    "companyName": "Productivity Plus",
+    "id": 5,
+    "description": "A simple yet powerful to-do list and task manager to organize your life.",
+    "size": 25,
+    "reviews": 150230,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 2230 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 35000 },
+      { "name": "5 star", "count": 100000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/financeflow.png",
+    "title": "Finance Flow",
+    "companyName": "SecureWallet Co.",
+    "id": 6,
+    "description": "Track your expenses, manage budgets, and take control of your finances.",
+    "size": 80,
+    "reviews": 75900,
+    "ratingAvg": 4.4,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 3500 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/speedracer.png",
+    "title": "Speed Racer 3D",
+    "companyName": "Adrenaline Games",
+    "id": 7,
+    "description": "High-octane racing game with stunning graphics and customizable cars.",
+    "size": 450,
+    "reviews": 2500100,
+    "ratingAvg": 4.3,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 250100 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/codehub.png",
+    "title": "CodeHub Learn",
+    "companyName": "DevEd",
+    "id": 8,
+    "description": "Learn to code in Python, Java, C++, and more with interactive lessons.",
+    "size": 60,
+    "reviews": 45000,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 37000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/securechat.png",
+    "title": "SecureChat",
+    "companyName": "PrivacyFirst",
+    "id": 9,
+    "description": "An end-to-end encrypted messenger that puts your privacy first.",
+    "size": 55,
+    "reviews": 1800500,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30500 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1200000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/recipecorner.png",
+    "title": "Recipe Corner",
+    "companyName": "Kitchen Creations",
+    "id": 10,
+    "description": "Discover thousands of recipes, create meal plans, and generate shopping lists.",
+    "size": 75,
+    "reviews": 65432,
+    "ratingAvg": 4.7,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 632 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/podstream.png",
+    "title": "PodStream",
+    "companyName": "AudioWave",
+    "id": 11,
+    "description": "The ultimate podcast player. Discover, subscribe, and listen to your favorites.",
+    "size": 40,
+    "reviews": 320600,
+    "ratingAvg": 4.6,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 9000 },
+      { "name": "2 star", "count": 6600 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 200000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/fitlife.png",
+    "title": "FitLife Tracker",
+    "companyName": "Healthify",
+    "id": 12,
+    "description": "Track your workouts, log your meals, and achieve your fitness goals.",
+    "size": 130,
+    "reviews": 115240,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 4200 },
+      { "name": "2 star", "count": 3040 },
+      { "name": "3 star", "count": 13000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 70000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/connectsocial.png",
+    "title": "Connect Social",
+    "companyName": "GlobalNet",
+    "id": 13,
+    "description": "A new social media platform with frequent updates but some performance issues.",
+    "size": 150,
+    "reviews": 45000,
+    "ratingAvg": 3.2,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/sudokumaster.png",
+    "title": "Sudoku Master",
+    "companyName": "Brainy Puzzles",
+    "id": 14,
+    "description": "Classic Sudoku with thousands of puzzles and multiple difficulty levels.",
+    "size": 30,
+    "reviews": 450890,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 1890 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 350000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/notewave.png",
+    "title": "NoteWave",
+    "companyName": "Ink & Digital",
+    "id": 15,
+    "description": "A beautiful and simple note-taking app with cloud sync.",
+    "size": 50,
+    "reviews": 88000,
+    "ratingAvg": 4.7,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 65000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/cloudstorage.png",
+    "title": "Cloud Storage",
+    "companyName": "Data Vault",
+    "id": 16,
+    "description": "Securely store, share, and access your files from anywhere.",
+    "size": 100,
+    "reviews": 2100000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 110000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 550000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/lingolearn.png",
+    "title": "LingoLearn",
+    "companyName": "Polyglot Systems",
+    "id": 17,
+    "description": "Learn a new language with fun, bite-sized lessons. Now with 30+ languages.",
+    "size": 125,
+    "reviews": 1500321,
+    "ratingAvg": 4.7,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20321 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1000000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/videostream.png",
+    "title": "Video Stream+",
+    "companyName": "Cineverse",
+    "id": 18,
+    "description": "Stream thousands of movies and TV shows. Some users report buffering issues.",
+    "size": 65,
+    "reviews": 3200000,
+    "ratingAvg": 3.9,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/pixelart.png",
+    "title": "Pixel Art Creator",
+    "companyName": "8-Bit Studios",
+    "id": 19,
+    "description": "Create amazing pixel art with an easy-to-use editor and a vibrant community.",
+    "size": 70,
+    "reviews": 55980,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 980 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/scannerapp.png",
+    "title": "Doc Scanner",
+    "companyName": "SwiftScan",
+    "id": 20,
+    "description": "Turn your phone into a portable scanner. Scan documents, receipts, and more.",
+    "size": 90,
+    "reviews": 650400,
+    "ratingAvg": 4.8,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 13000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 550000 }
+    ]
+  }
+]

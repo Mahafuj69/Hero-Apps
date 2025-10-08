@@ -1,7 +1,7 @@
 import hero from "../assets/hero.png"
 import { Link } from 'react-router';
-import google from "../assets/google-logo.png"
-import AppStore from "../assets/app-store.png"
+import google from "../assets/google-logo.png.png"
+import AppStore from "../assets/apple-ios.png"
 const Introduction = () => {
     return (
        <div className="bg-slate-50 pt-20 pr-20 pb-0 pl-20 ">

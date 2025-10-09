@@ -2,13 +2,31 @@ import { Link, useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, YAxis } from "recharts";
 import { toast } from "react-toastify";
-import LoadingSpinner from "../Components/LaodingSpinner";
+import LoadingSpinner from "../Components/SkeletonLoader";
+import { useState, useEffect } from "react";
 
 const AppDetails = () => {
     const { id } = useParams();
     const { apps } = useApps();
+    const [isInstalled, setIsInstalled] = useState(false);
 
     const app = apps.find((a) => String(a.id) === id);
+
+    useEffect(() => {
+        const checkInstallationStatus = () => {
+            let installedApps = [];
+            try {
+                installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+                if (!Array.isArray(installedApps)) installedApps = [];
+            } catch {
+                installedApps = [];
+            }
+            const alreadyInstalled = installedApps.some((a) => a.id === app?.id);
+            setIsInstalled(alreadyInstalled);
+        };
+
+        checkInstallationStatus();
+    }, [app?.id]);
 
     if (!app) {
         return <LoadingSpinner />;
@@ -25,15 +43,10 @@ const AppDetails = () => {
             installedApps = [];
         }
 
-        const alreadyInstalled = installedApps.some((a) => a.id === app.id);
-        if (alreadyInstalled) {
-            toast.info(`${app.title} is already installed.`);
-            return;
-        }
-
         installedApps.push(app);
         localStorage.setItem("installedApps", JSON.stringify(installedApps));
         toast.success(`${app.title} Installed Successfully!`);
+        setIsInstalled(true);
     };
 
     return (
@@ -54,7 +67,7 @@ const AppDetails = () => {
                     <div className="flex flex-wrap gap-6 sm:gap-10 text-base sm:text-lg mt-4">
                         <div className="w-1/2 sm:w-auto">
                             <p className="text-gray-500">Downloads</p>
-                            <p className="font-semibold">{downloads}</p>
+                            <p className="font-semibold">{downloads}M</p>
                         </div>
                         <div className="w-1/2 sm:w-auto">
                             <p className="text-gray-500">Average Rating</p>
@@ -68,9 +81,12 @@ const AppDetails = () => {
 
                     <Link
                         onClick={handleToInstallation}
-                        className="btn bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold mt-5 transition w-full sm:w-auto"
+                        className={`btn ${
+                            isInstalled ? "bg-gray-500 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
+                        } text-white px-6 py-3 rounded-xl font-semibold mt-5 transition w-full sm:w-auto`}
+                        disabled={isInstalled}
                     >
-                        Install Now ({size} MB)
+                        {isInstalled ? "Installed" : `Install Now (${size} MB)`}
                     </Link>
                 </div>
             </div>

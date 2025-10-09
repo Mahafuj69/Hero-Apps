@@ -1,14 +1,17 @@
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Outlet } from 'react-router';
+import RouteLoader from '../Components/RouteLoader';
 
 const MainLayout = () => {
     return (
         <div className='flex flex-col'>
             <Navbar></Navbar>
-             <div>
+             <RouteLoader>
+                <div>
                 <Outlet></Outlet>
-             </div>
+                </div>
+             </RouteLoader>
             <Footer></Footer>
         </div>
     );

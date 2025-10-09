@@ -4,12 +4,12 @@ import { useEffect, useState } from "react"
 
 const useApps = ()=>{
     const [apps, setApps] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     const [ error, setError] = useState(null)
 
     useEffect (()=>{
         setLoading(true)
-        axios('../userData.json')
+        axios('/userData.json')
         .then(data=>setApps(data.data))
         .catch(error => setError(error))
         .finally(()=> setLoading(false))

@@ -1,4 +1,6 @@
 import { Link } from 'react-router';
+import rating from '../assets/icon-ratings.png'
+import download from '../assets/icon-downloads.png'
 const AppCard = ({apps}) => {
   const { title, image, ratingAvg, downloads, id } = apps
    return (
@@ -13,11 +15,10 @@ const AppCard = ({apps}) => {
     {title}
     
    </h2>
-              <div className="card-actions justify-between">
-            <div className="  gap-2 "> <div className="rating">
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled value={ratingAvg}/>
-</div> {ratingAvg}</div>
-           <div className=" gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-cloud"><path d="M12 15V3"/><path d="M19 10a7 7 0 1 0-14 0"/><polyline points="8 15 12 19 16 15"/></svg>{downloads}</div>
+              <div className=" card-actions justify-between">
+            <div className=" flex flex-row gap-2 "> <div className="rating"></div >
+        <img className='h-5' src={rating} alt="" /> {ratingAvg}</div>
+           <div className=" flex flex-row gap-2 "> <img className='h-5' src={download} alt="" />{downloads}M</div>
           </div>
         </div>
        </div>

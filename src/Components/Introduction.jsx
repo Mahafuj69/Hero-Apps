@@ -19,12 +19,22 @@ const Introduction = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center gap-4 mt-6 md:gap-6 md:mt-10">
-                <Link className="flex justify-center gap-2 text-black border p-2 rounded-md py-2 px-4 md:py-3 md:px-6 ">
+                <a
+                    href="https://play.google.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center gap-2 text-black border p-2 rounded-md py-2 px-4 md:py-3 md:px-6 "
+                >
                     <img src={google} alt="" className=" h-5 md:h-7" /> Google Play
-                </Link>
-                <Link className="flex justify-center gap-2 text-black border p-2 rounded-md py-2 px-4 md:py-3 md:px-6">
+                </a>
+                <a
+                    href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center gap-2 text-black border p-2 rounded-md py-2 px-4 md:py-3 md:px-6"
+                >
                     <img src={AppStore} alt="" className="h-5 md:h-7" /> App Store
-                </Link>
+                </a>
             </div>
             <div className="flex justify-center mt-6 md:mt-10">
                 <img src={hero} alt="" className="w-full md:w-auto" />

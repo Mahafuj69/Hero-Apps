@@ -13,10 +13,10 @@ const Installation = () => {
 
 const sortedApp = (
     () => {
-    if (sortOrder === 'size-asc') {
-        return [...installedApps].sort((a, b) => a.size - b.size);
-    } else if (sortOrder === 'size-desc') {
-        return [...installedApps].sort((a, b) => b.size - a.size);
+    if (sortOrder === 'downloads-asc') {
+        return [...installedApps].sort((a, b) => a.downloads - b.downloads);
+    } else if (sortOrder === 'downloads-desc') {
+        return [...installedApps].sort((a, b) => b.downloads - a.downloads);
     } else {
         return installedApps;
     }
@@ -41,7 +41,8 @@ const sortedApp = (
 
 
     return (
-    <div className='px-4 md:px-8 lg:px12 py-4 md:py-8 lg:py12' >
+   <div className='container mx-auto' >
+     <div className='px-4 md:px-8 lg:px12 py-4 md:py-8 lg:py12' >
         
             <div className='flex flex-col text-center mt-10 mb-10'>
                 <h1 className='text-5xl font-bold '>Your Installed Apps</h1>
@@ -53,9 +54,9 @@ const sortedApp = (
 
                 <label className='form-control w-full max-w-xs'>
                     <select className='select select-bordered' value={sortOrder} onChange={a => setSortOrder(a.target.value)}>
-                    <option value="none">Sort By Size</option>
-                    <option value="size-asc">Low-&gt;High</option>
-                    <option value="size-desc"> High-&gt;Low</option>
+                    <option value="none">Sort By </option>
+                    <option value="downloads-asc">Low-&gt;High</option>
+                    <option value="downloads-desc"> High-&gt;Low</option>
                     </select>
                 </label>
 
@@ -76,7 +77,7 @@ const sortedApp = (
                             <div className="mt-1 flex items-center space-x-4 text-sm text-gray-500">
                                 <div className="flex items-center">
                                     <img src={downloads} alt="" className='h-4' />
-                                    <span>{app.downloads}</span>
+                                    <span>{app.downloads}M</span>
                                 </div>
 
                                 <div className="flex items-center">
@@ -102,6 +103,7 @@ const sortedApp = (
                    </div> )}
             </div>
         </div>
+   </div>
     );
 };
 

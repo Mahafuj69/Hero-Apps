@@ -2,8 +2,8 @@ import { Link, useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, YAxis } from "recharts";
 import { toast } from "react-toastify";
-import LoadingSpinner from "../Components/SkeletonLoader";
 import { useState, useEffect } from "react";
+import ErrorApp from "../Errors/ErrorApp";
 
 const AppDetails = () => {
     const { id } = useParams();
@@ -29,7 +29,7 @@ const AppDetails = () => {
     }, [app?.id]);
 
     if (!app) {
-        return <LoadingSpinner />;
+        return <ErrorApp></ErrorApp> ;
     }
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;

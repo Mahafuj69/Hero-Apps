@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsHgXb8H0k6vx4ykqKj-9-Hcz5JFwPu83xWg&s",
     "title": "Facebook",
     "companyName": "Meta Platforms Inc.",
     "description": "Connect with friends, share updates, and stay in touch with communities around the world.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://tse3.mm.bing.net/th/id/OIP.Go2CQNhF_49tkKcpEl_sHQHaHZ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://images.icon-icons.com/1269/PNG/512/1497553304-104_84834.png",
     "title": "Instagram",
     "companyName": "Meta Platforms Inc.",
     "description": "A simple, fun, and creative way to capture, edit & share photos, videos, and messages.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "image": "https://img.freepik.com/premium-vector/circle-whatsapp-logotype-icon-social-media-app-network-application-popular-editorial-brand-vector-illustration_913857-391.jpg?semt=ais_hybrid&w=740&q=80",
     "title": "WhatsApp Messenger",
     "companyName": "WhatsApp LLC",
     "description": "Fast, simple, and secure messaging and calling app available on phones all over the world.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "https://cdn.media.amplience.net/i/clarks/TikTok_Icon_Black_Circle?fmt=auto&img404=imageNotFound&w=2088&qlt=default",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/042/127/114/small/app-icon-style-tiktok-logo-with-thick-white-border-on-a-transparent-background-free-png.png",
     "title": "TikTok",
     "companyName": "ByteDance Ltd.",
     "description": "Watch and create short videos showcasing your creativity and moments.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "https://tse1.mm.bing.net/th/id/OIP.xmzYxYCvzJciaHIi9PNiowHaHb?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvKwUR3hlb-BXlOyq5dXJCWvtG_ZbbtnZd_e-uExlCrxuQIW94JLKzJDorleiZfQW8BXg&usqp=CAU",
     "title": "Google Chrome",
     "companyName": "Google LLC",
     "description": "Fast, secure, and easy-to-use web browser designed for modern internet experiences.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/092014/telegram_0_0.png?itok=LPd0juJ7",
+    "image": "https://images.indianexpress.com/2022/03/Telegram-new-feature.jpg?w=414",
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "description": "Fast, secure, and private messaging app with cloud-based storage.",
@@ -289,8 +289,8 @@
   },
   {
     "id": 17,
-    "image": "https://pngimg.com/uploads/amazon/amazon_PNG5.png",
-    "title": "Amazon Shopping",
+    "image": "https://w7.pngwing.com/pngs/832/502/png-transparent-amazon-logo-text-brand-amazon-text-service-retail.png",
+    "title": "Amazon Pay",
     "companyName": "Amazon Mobile LLC",
     "description": "Shop millions of products online and enjoy fast delivery with Prime.",
     "size": 120,
@@ -343,7 +343,7 @@
   },
   {
     "id": 20,
-    "image": "https://www.finsmes.com/wp-content/uploads/2020/07/uber.jpg",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/bd/ce/2dbdceb4-4be5-c262-cd2b-1037fa993a23/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/1200x630wa.png",
     "title": "Uber",
     "companyName": "Uber Technologies Inc.",
     "description": "Request rides and travel safely with professional drivers worldwide.",

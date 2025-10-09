@@ -1,11 +1,15 @@
-import React from 'react';
+import logo from '../assets/logo.png'
 
-const LaodingSpinner = () => {
-    return (
-        <div>
-            <p>I am LaodingSpinner</p>
-        </div>
-    );
+const LoadingSpinner = () => {
+  return (
+    <div className="flex justify-center items-center h-[60vh]">
+      <img
+        src={logo}
+        alt="Loading..."
+        className="w-20 h-20 animate-spin-infinite-fast"
+      />
+    </div>
+  );
 };
 
-export default LaodingSpinner;
+export default LoadingSpinner;

@@ -7,13 +7,13 @@ import useApps from '../Hooks/useApps';
 
 const Home = () => {
 
- const {apps, loading, error} = useApps ()
+ const {apps} = useApps ()
  const featuredApps = apps.slice(0, 8)
  console.log(apps)
     return (
       
     
-        <div>
+        <div className="container mx-auto">
           
 
             <Introduction></Introduction>
@@ -22,7 +22,7 @@ const Home = () => {
                 <h1 className='text-4xl font-bold '>Trending Apps</h1>
                 <p className='mt-4 text-slate-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-4 '>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-8 lg:px-12 py-4 md:py-8 lg:py-12 '>
                 {featuredApps.map(apps => (
                 <AppCard key={apps.id} apps={apps} />
             ))}

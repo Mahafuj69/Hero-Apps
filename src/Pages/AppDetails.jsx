@@ -75,19 +75,19 @@ const AppDetails = () => {
 
           <div className="flex flex-wrap gap-6 sm:gap-10 text-base sm:text-lg mt-4">
             <div className="w-1/2 sm:w-auto">
-              <img src={downloadsIcon} alt="" />
+              <img className="h-7" src={downloadsIcon} alt="" />
               <p className="text-gray-500">Downloads</p>
               <p className="font-semibold">{downloads}M</p>
             </div>
 
             <div className="w-1/2 sm:w-auto">
-              <img src={ratingIcon} alt="" />
+              <img img className="h-7" src={ratingIcon} alt="" />
               <p className="text-gray-500">Average Rating</p>
               <p className="font-semibold">{ratingAvg}</p>
             </div>
 
             <div className="w-1/2 sm:w-auto">
-              <img src={reviewsIcon} alt="" />
+              <img img className="h-8" src={reviewsIcon} alt="" />
               <p className="text-gray-500">Total Reviews</p>
               <p className="font-semibold">{reviews.toLocaleString()}</p>
             </div>

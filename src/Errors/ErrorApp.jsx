@@ -2,7 +2,8 @@ import { Link } from "react-router";
 import upError from "../assets/App-Error.png"
 const ErrorApp = () => {
   return (
-   <div className="w-full h-screen flex justify-center items-center">
+   <div>
+      <div className="w-full h-screen flex justify-center items-center">
     
       <div className="flex flex-col items-center p-4">
       <img src={upError} alt="App Error" className="max-w-full h-auto" />
@@ -15,6 +16,9 @@ const ErrorApp = () => {
 
 
    </div>
+      
+   </div>
+
     );
 };
 

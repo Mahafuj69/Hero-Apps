@@ -3,6 +3,8 @@ import useApps from '../Hooks/useApps';
 import AppCard from '../Components/AppCard';
 import SkeletonLoader from '../Components/SkeletonLoader';
 import { Link } from 'react-router';
+import RouteLoader from '../Components/RouteLoader';
+import ErrorApp from '../Errors/ErrorApp';
 
 const Apps = () => {
   const { apps, loading } = useApps();
@@ -54,7 +56,7 @@ const Apps = () => {
       </div>
       {searching ? (
         <div className="flex justify-center my-4">
-          <progress className="progress w-56"></progress>
+          <RouteLoader />
         </div>
       ) : (
         <>
@@ -65,17 +67,7 @@ const Apps = () => {
               ))}
             </div>
           ) : (
-            <div className='flex flex-col justify-center items-center h-48'>
-              <h2 className='text-2xl font-semibold text-gray-500'>
-                No Apps Found Try Again
-              </h2>
-              <Link
-                className='btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2] text-white border-none mt-5'
-                to="/apps"
-              >
-                Go Back
-              </Link>
-            </div>
+           <ErrorApp />
           )}
         </>
       )}

@@ -11,11 +11,13 @@ import reviewsIcon from '../assets/icon-review.png';
 const AppDetails = () => {
   const { id } = useParams();
   const location = useLocation();
-  const { apps } = useApps();
+  const { apps, loading } = useApps(); 
   const [isInstalled, setIsInstalled] = useState(false);
 
   const app = apps.find((a) => String(a.id) === id);
+
   const pathParts = location.pathname.split("/");
+  const invalidPath = !app || pathParts.length > 3 || pathParts[1].toLowerCase() !== "app";
 
   useEffect(() => {
     if (!app) return;
@@ -30,7 +32,9 @@ const AppDetails = () => {
     setIsInstalled(alreadyInstalled);
   }, [app]);
 
-  const invalidPath = !app || pathParts.length > 3 || pathParts[1].toLowerCase() !== "app";
+  if (loading) {
+    return <div className="max-w-6xl mx-auto py-20"><routerLoader /></div>;
+  }
 
   if (invalidPath) {
     return <ErrorApp />;
@@ -52,6 +56,7 @@ const AppDetails = () => {
     toast.success(`${app.title} Installed Successfully!`);
     setIsInstalled(true);
   };
+
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-10">
@@ -91,7 +96,9 @@ const AppDetails = () => {
           <Link
             onClick={handleToInstallation}
             className={`btn ${
-              isInstalled ? "bg-gray-500 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
+              isInstalled
+                ? "bg-gray-500 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600"
             } text-white px-6 py-3 rounded-xl font-semibold mt-5 transition w-full sm:w-auto`}
             disabled={isInstalled}
           >
@@ -100,6 +107,7 @@ const AppDetails = () => {
         </div>
       </div>
 
+      {/* Ratings */}
       <div className="mt-12">
         <h2 className="text-2xl font-semibold mb-4 text-center md:text-left">Ratings</h2>
         <div className="bg-white p-4 rounded-xl shadow-sm border">

@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from "../assets/logo.png"
 const Footer = () => {
   return (
@@ -10,9 +9,9 @@ const Footer = () => {
     <img src={logo} alt="" className='h-30 ml-9'  />
   
   <p className="font-bold">
-    ACME Industries Ltd.
+    Hero.io Industries Ltd.
     <br />
-    Providing reliable tech since 1992
+    Providing reliable app since 1992
   </p>
   <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>

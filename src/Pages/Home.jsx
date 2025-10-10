@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import AppCard from '../Components/AppCard';
 import useApps from '../Hooks/useApps';
 import SkeletonLoader from '../Components/SkeletonLoader';
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 
 const Home = () => {
@@ -12,11 +13,7 @@ const Home = () => {
  const featuredApps = apps.slice(0, 8)
  console.log(apps)
     return (
-      
-    
-        <div className="container mx-auto">
-        
-
+        <div>
             <Introduction ></Introduction>
             <Banner></Banner>
               <div className='flex flex-col text-center mt-10 mb-10'>
@@ -30,7 +27,7 @@ const Home = () => {
             ))}
             </div>}
             <div className='flex justify-center mt-10 mb-10'>
-                <Link to='/Apps' className='btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2]'>Show All</Link>
+                <Link to='/Apps' className='btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2]'>Show All <MdOutlineArrowForwardIos /> </Link>
             </div>
         </div>
     );

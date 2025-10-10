@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="bg-gradient-to-r from-violet-600 to-indigo-600 w-full h-auto flex flex-col justify-start items-center gap-10 p-4 md:p-10 lg:p-20">
+        <div className="  bg-gradient-to-r from-violet-600 to-indigo-600 w-full h-auto flex flex-col justify-start items-center gap-10 p-4 md:p-10 lg:p-20">
             <h2 className="text-2xl font-bold tracking-tight text-center text-white sm:text-4xl md:text-5xl lg:text-6xl">
                 Trusted By Millions, Built For You
             </h2>

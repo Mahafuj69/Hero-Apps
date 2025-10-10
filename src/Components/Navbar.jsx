@@ -13,6 +13,7 @@ const Navbar = () => {
         : "text-gray-700 hover:text-[#632ee3]"
     }`;
 
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -56,10 +57,9 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo and HERO.IO side by side */}
         <div className="flex items-center gap-2 ml-2">
           <img src={logo} alt="Logo" className="h-8" />
-          <NavLink to="/" className="text-xl font-bold text-primary">
+          <NavLink to="/" className="text-[16px] font-bold leading-[26px] tracking-[0%] text-left capitalize font-inter bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
             HERO.IO
           </NavLink>
         </div>
